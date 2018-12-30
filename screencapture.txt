@@ -1,0 +1,59 @@
+i=437;while [ 1 ];do screencapture -t jpg -x ~/Desktop/wildhunt/$i.jpg; let i++;sleep 30; done
+
+i=629;while [ 1 ];do screencapture -t jpg -x ~/Desktop/equilibrium/$i.jpg; let i++;sleep 12; done
+
+while [ 1 ];do screencapture -t jpg -x $HOME/Users/txplsm/Dropbox/Public/webcam.jpg; sleep 30; done
+
+-l<windowid> capture this windowsid
+
+CURRENT GOOD COMMAND: while [ 1 ];do screencapture -t jpg -x /Users/txplsm/Dropbox/Public/webcam.jpg; sleep 30; done
+
+[works] WITH STATUS UPDATE: echo sweatshop is: ONLINE > status.html; while [ 1 ];do screencapture -t jpg -x /Users/txplsm/Dropbox/Public/webcam.jpg; sleep 30; done
+
+OPENING:
+echo "
+<html>
+<head>
+<style>
+
+
+body    {
+	color:#FFD6EB;
+    font-size:12px;
+    font-family:courier;
+}
+
+</style>
+</head>
+<body>
+<p>
+sweatshop is: ONLINE
+</p>
+</body>
+</html>
+" > status.html; while [ 1 ];do screencapture -t jpg -x /Users/txplsm/Dropbox/Public/webcam.jpg; sleep 30; done
+
+
+
+CLOSING: 
+echo "
+<html>
+<head>
+<style>
+
+
+body    {
+	color:#FFD6EB;
+    font-size:12px;
+    font-family:courier;
+}
+
+</style>
+</head>
+<body>
+<p>
+sweatshop is: OFFLINE
+</p>
+</body>
+</html>
+" > status.html
