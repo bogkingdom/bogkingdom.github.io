@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {background-color:#333333}
+
+p    
+	{
+	color:#FFD6EB;
+    font-size:12px;
+    font-family:courier;
+    border: 0;
+    }
+
+img
+    {
+    border-radius:10px;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    }
+    
+#status
+	{
+		border: 0;
+		z-index: 1;
+	}
+	
+iframe
+    {
+        z-index: 1;
+        border: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+	
+</style>
+</head>
+<body>
+<p>
+<script type="text/javascript">
+/*
+Auto Refresh Page with Time script
+By JavaScript Kit (javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+//enter refresh time in "minutes:seconds" Minutes should range from 0 to inifinity. Seconds should range from 0 to 59
+var limit="0:30"
+
+if (document.images){
+var parselimit=limit.split(":")
+parselimit=parselimit[0]*60+parselimit[1]*1
+}
+function beginrefresh(){
+if (!document.images)
+return
+if (parselimit==1)
+window.location.reload()
+else{ 
+parselimit-=1
+curmin=Math.floor(parselimit/60)
+cursec=parselimit%60
+if (curmin!=0)
+curtime=curmin+" minutes and "+cursec+" seconds left until page refresh!"
+else
+curtime=cursec+" seconds left until page refresh!"
+window.status=curtime
+setTimeout("beginrefresh()",1000)
+}
+}
+
+window.onload=beginrefresh
+</script>
+</p>
+
+<!--
+<p>
+<iframe src="https://www.dropbox.com/s/iih6zm3avv3xted/statuswrapper.html?dl=0">
+</p>
+-->
+
+<p>
+<a href="https://www.dropbox.com/s/3madeovt0tmyae0/webcam.jpg?dl=0" target="_blank">
+<img src="https://www.dropbox.com/s/3madeovt0tmyae0/webcam.jpg?dl=0" width=100% />
+</a>
+</p>
+</body>
+</html>
